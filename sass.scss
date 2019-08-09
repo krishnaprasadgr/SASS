@@ -1,0 +1,16 @@
+$yourcolor:#000056;
+.yourdiv{
+  color:$yourcolor;
+}
+@for $vfoo from 35px to 85px{
+  .margin-#{vfoo}{
+    margin:$vfoo 10px;
+  }
+}
+@ifwidth(body) > 500px {
+  background-color:blue;
+}
+else
+{
+  background-color:white;
+}
